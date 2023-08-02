@@ -9,11 +9,11 @@ class About extends React.Component {
                 {
                     id: "HTML5_skill",
                     content: "HTML5",
-                    porcentage: "80%",
-                    value: "80"
+                    porcentage: "90%",
+                    value: "90"
                 },
-                {id: "CSS3_skill",
-                  content: "CSS3",
+                {id: "CSS",
+                  content: "CSS",
                   porcentage: "75%",
                   value: "75"},
                 {
@@ -24,13 +24,13 @@ class About extends React.Component {
                 },
                 {id: "PHP_skill",
                   content: "PHP",
-                  porcentage: "70%",
-                  value: "70"},
+                  porcentage: "80%",
+                  value: "80"},
                 {
                     id: "ReactJS_skill",
                     content: "ReactJS",
-                    porcentage: "40%",
-                    value: "40"
+                    porcentage: "80%",
+                    value: "80"
                 },
                 {
                     id: "Jquery_skill",
