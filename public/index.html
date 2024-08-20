@@ -6,6 +6,7 @@
   <title>Refly's Portfolio</title>
   <link rel="shortcut icon" href="%PUBLIC_URL%/team.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com/"></script>
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -26,19 +27,19 @@
 <body id="page-top">
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/66431b8507f59932ab3f5288/1i05cd6jo';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<!--Start of Script-->
+  <div id="chat-widget-container" style="position: fixed; bottom: 10px; left: 10px"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn-widget-dev.berijalan.id/widget-client.js"></script>
+    <script>
+      const rootElement = document.getElementById('chat-widget-container');
+      const tenantId = '8fee1a4a-8437-43ff-b705-10c24046679f';
+      ReactDOM.render(React.createElement(window.WidgetChatbot.default, { tenantId }), rootElement);
+    </script>
+
+<!--End of Script-->
 </body>
 
 </html>
